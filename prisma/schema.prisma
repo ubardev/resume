@@ -22,7 +22,7 @@ model User {
   createdAt       DateTime    @default(now())
   updatedAt       DateTime    @updatedAt
   tokens          Token[]
-  links           Links[]
+  Mylinks         MyLinks[]
 
   @@index([userId])
 }
@@ -38,7 +38,7 @@ model Token {
   @@index([userId])
 }
 
-model Links {
+model MyLinks {
   id        Int      @id @default(autoincrement())
   name      String
   link      String
