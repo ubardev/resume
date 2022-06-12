@@ -17,9 +17,10 @@ const MyLinkDetail: NextPage = () => {
   );
 
   return (
-    <Layout>
+    <Layout title="My Links" seoTitle="My Links">
+      <div className="mt-3 text-3xl">My Links</div>
       {data?.myLinks?.map((myLink) => (
-        <MyLink name={myLink.name} myLink={myLink.link} />
+        <MyLink key={myLink.id} name={myLink.name} myLink={myLink.link} />
       ))}
     </Layout>
   );

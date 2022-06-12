@@ -15,7 +15,7 @@ export default function Layout({ title, seoTitle, children }: LayoutProps) {
   return (
     <div>
       <Head>
-        <title>{seoTitle} | Carrot Market</title>
+        <title>{seoTitle} | Dev Resume</title>
       </Head>
       <div>{children}</div>
     </div>
