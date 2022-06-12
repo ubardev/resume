@@ -85,9 +85,9 @@ export default function MyLink({ name, myLink }: MyLinkProps) {
           {/* {name === "github" ? <Github /> : <Blog />} */}
           {/* {{ github: <Github />, blog: <Blog /> }[name]} */}
           {(function () {
-            if (name === "github") return <Github />;
-            else if (name === "blog") return <Blog />;
-            else if (name === "notion") return <Notion />;
+            if (name === "Github") return <Github />;
+            else if (name === "Blog") return <Blog />;
+            else if (name === "Notion") return <Notion />;
             else return <OtherLink />;
           })()}
           <div className="text-3xl font-medium">{name}</div>
