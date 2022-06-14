@@ -9,8 +9,14 @@ const Login: NextPage = () => {
         Welcom to Resume Service
       </h3>
       <div className="mt-12">
-        <form>
-          <Input label="ID" />
+        <form className="flex flex-col mt-8 space-y-4">
+          <Input label="ID" name="ID" type="text" required={true} />
+          <Input
+            label="Password"
+            name="Password"
+            type="password"
+            required={true}
+          />
         </form>
         <div className="mt-8">
           <div className="relative">
