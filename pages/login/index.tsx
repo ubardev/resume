@@ -1,6 +1,7 @@
 import { NextPage } from "next";
 import Head from "next/head";
 import Input from "@components/Input";
+import Button from "@components/Button";
 
 const Login: NextPage = () => {
   return (
@@ -17,6 +18,7 @@ const Login: NextPage = () => {
             type="password"
             required={true}
           />
+          <Button text="Login" />
         </form>
         <div className="mt-8">
           <div className="relative">
