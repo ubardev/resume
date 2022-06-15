@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import Head from "next/head";
-import Input from "../../components/input";
-import Button from "../../components/button";
+import Input from "@components/input";
+import Button from "@components/button";
 
 const Login: NextPage = () => {
   return (
